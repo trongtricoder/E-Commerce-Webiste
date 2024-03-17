@@ -9,19 +9,6 @@ loginBtn.addEventListener("click", () => {
     const mail = mailInput.value.trim();
     const password = passwordInput.value.trim();
       
-//   if (accounts == null) {
-//     document.getElementById("errorAlert").textContent = "Wrong Email";
-//   } else {
-//     data = JSON.parse(accounts);
-//     if (email === data.email && password === data.password) {
-//       document.getElementById("errorAlert").textContent = "Login successfully";
-//       setTimeout(() => {
-//         window.location.href = "home.html";
-//       }, 1000);
-//     } else {
-//       document.getElementById("errorAlert").textContent = "Wrong password";
-//     }
-//   }
 if (mail.length === 0) {
     errorAlert.textContent = "Please enter your email";
     errorAlert.style.display = "block";
@@ -43,7 +30,7 @@ if (password.length < 8) {
             if (mail == users[i].mail && password == users[i].password){
                 document.getElementById("errorAlert").textContent = "Login successfully";
                 setTimeout(() => {
-                window.location.href = "home.html";
+                window.location.href = "index.html";
                 }, 1000);
             }
         }

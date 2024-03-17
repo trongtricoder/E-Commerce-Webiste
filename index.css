@@ -37,7 +37,7 @@ html {
     color: lightgray;
   }
   
-  .limitedOffer {
+  .myAccount {
     font-size: 20px;
     border-bottom: 2px solid green;
     cursor: pointer;
@@ -256,7 +256,7 @@ html {
   .payButton {
     position: absolute;
     height: 40px;
-    bottom: -40;
+    bottom: -40px;
     width: 100%;
     left: 0;
     -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);

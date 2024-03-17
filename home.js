@@ -136,3 +136,9 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
+const checkout = document.querySelector("payButton");
+
+checkout.addEventListener("click", () => {
+    alert("Your transaction is on progress, you may check your email!")
+});
