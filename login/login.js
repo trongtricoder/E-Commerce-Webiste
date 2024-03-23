@@ -33,6 +33,10 @@ if (password.length < 8) {
                 window.location.href = "index.html";
                 }, 1000);
             }
+            else{
+                errorAlert.textContent = "Wrong password";
+                errorAlert.style.display = "block";
+            }
         }
     }
 );

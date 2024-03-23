@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.title h1 {
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+  
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#login-form input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+  
+#login-form input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+  
+#errorAlert {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+  
+#login-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 15px auto;
+    margin-left: 60px;
+}
+  
+#login-btn:hover {
+    background-color: #222; 
+}
+  
+.change-web {
+    text-align: center;
+    margin-top: 15px;
+}
+  
+.change-web a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+  
+.change-web a:hover {
+    color: #000;
+}
