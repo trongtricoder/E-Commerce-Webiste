@@ -46,7 +46,7 @@ signupBtn.addEventListener("click", () => {
         mailInput.value = "";
         passwordInput.value = "";
     setTimeout(() => {
-        window.location.href = "login.html";
+        window.location.href = "/login/login.html";
     }, 1000);
     }
 });

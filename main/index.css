@@ -282,6 +282,17 @@ html {
     padding: 2px;
   }
   
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .payInput.error {
+    border-bottom: 1px solid red; 
+  }
+
   .productImg {
     width: 50%;
   }
@@ -319,10 +330,21 @@ html {
     cursor: pointer;
   }
   
-  .color:last-child {
+  .color:nth-child(2) {
     background-color: darkblue;
   }
+
+  .color:nth-child(3){
+    background-color: lightgray;
+  }
   
+  .sizes {
+    display: flex; /* Makes sizes appear horizontally */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents line breaks */
+  }
+  
+
   .size {
     padding: 5px 20px;
     border: 1px solid black;
@@ -400,6 +422,11 @@ html {
     padding: 50px;
   }
   
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+
   .fMenuTitle {
     font-size: 16px;
   }
