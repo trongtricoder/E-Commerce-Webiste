@@ -27,18 +27,31 @@ if (password.length < 8) {
     return;   
 }
     for(i = 0; i < users.length; i++){
-            if (mail == users[i].mail && password == users[i].password){
-                document.getElementById("errorAlert").textContent = "Login successfully";
-                setTimeout(() => {
+        if (mail === users[i].mail) {
+            if (password === users[i].password) {
+              document.getElementById("errorAlert").textContent = "Login successful";
+              errorAlert.style.display = "block";
+              errorAlert.classList.remove("error"); 
+              errorAlert.classList.add("success"); 
+      
+              setTimeout(() => {
                 window.location.href = "/index.html";
-                }, 1000);
+              }, 1000);
+              return; 
+            } else {
+              document.getElementById("errorAlert").textContent = "The password doesn't match with an existing password.";
+              errorAlert.style.display = "block";
+              errorAlert.classList.remove("success"); 
+              errorAlert.classList.add("error"); 
+              return; 
             }
-            else if(mail != users[i].mail){
-                errorAlert.textContent = "The email address you entered doesn't match an existing account. Please check your email or create a new account.";
-                errorAlert.style.display = "block";
-            }
+          }
         }
-    }
+        document.getElementById("errorAlert").textContent = "The email address doesn't match an existing account.";
+        errorAlert.style.display = "block";
+        errorAlert.classList.remove("success"); 
+        errorAlert.classList.add("error");
+        }
 );
 
 
