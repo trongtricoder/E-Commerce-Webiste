@@ -30,15 +30,11 @@ if (password.length < 8) {
             if (mail == users[i].mail && password == users[i].password){
                 document.getElementById("errorAlert").textContent = "Login successfully";
                 setTimeout(() => {
-                window.location.href = "/main/index.html";
+                window.location.href = "/index.html";
                 }, 1000);
             }
             else if(mail != users[i].mail){
                 errorAlert.textContent = "The email address you entered doesn't match an existing account. Please check your email or create a new account.";
-                errorAlert.style.display = "block";
-            }
-            else{
-                errorAlert.textContent = "Wrong password";
                 errorAlert.style.display = "block";
             }
         }
