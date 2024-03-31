@@ -9,15 +9,15 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "/img/air.png",
+        img: "./img/air.png",
       },
       {
         code: "darkblue",
-        img: "/img/air2.png",
+        img: "./img/air2.png",
       },
       {
         code: "white",
-        img: "/img/air3.png",
+        img: "./img/air3.png",
       },
     ],
   },
@@ -28,15 +28,15 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "/img/jordan.png",
+        img: "./img/jordan.png",
       },
       {
         code: "green",
-        img: "/img/jordan2.png",
+        img: "./img/jordan2.png",
       },
       {
         code: "red",
-        img: "/img/jordan3.png"
+        img: "./img/jordan3.png"
       },
     ],
   },
@@ -47,15 +47,15 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "/img/blazer.png",
+        img: "./img/blazer.png",
       },
       {
         code: "green",
-        img: "/img/blazer2.png",
+        img: "./img/blazer2.png",
       },
       {
         code: "black",
-        img: "/img/blazer3.png"
+        img: "./img/blazer3.png"
       },
     ],
   },
@@ -66,15 +66,15 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "/img/crater.png",
+        img: "./img/crater.png",
       },
       {
         code: "lightgray",
-        img: "/img/crater2.png",
+        img: "./img/crater2.png",
       },
       {
         code: "pink",
-        img: "/img/crater3.png",
+        img: "./img/crater3.png",
       },
     ],
   },
@@ -85,15 +85,15 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "/img/hippie.png",
+        img: "./img/hippie.png",
       },
       {
         code: "black",
-        img: "/img/hippie2.png",
+        img: "./img/hippie2.png",
       },
       {
         code: "green",
-        img: "/img/hippie3.png",
+        img: "./img/hippie3.png",
       }
     ],
   },
