@@ -160,13 +160,18 @@ currentProductSizes.forEach((size, index) => {
 const productButton = document.querySelector(".productButton");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
+const blurOverlay = document.querySelector(".blur-overlay");
 
 productButton.addEventListener("click", () => {
   payment.style.display = "flex";
+  blurOverlay.style.display = "block";
+  document.body.style.overflow = "hidden";
 });
 
 close.addEventListener("click", () => {
   payment.style.display = "none";
+  blurOverlay.style.display = "none";
+  document.body.style.overflow = "auto";
 });
 
 $(document).ready(function() {
