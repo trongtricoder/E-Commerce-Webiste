@@ -160,17 +160,14 @@ currentProductSizes.forEach((size, index) => {
 const productButton = document.querySelector(".productButton");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
-const blurOverlay = document.querySelector(".blur-overlay");
 
 productButton.addEventListener("click", () => {
   payment.style.display = "flex";
-  blurOverlay.style.display = "block";
   document.body.style.overflow = "hidden";
 });
 
 close.addEventListener("click", () => {
   payment.style.display = "none";
-  blurOverlay.style.display = "none";
   document.body.style.overflow = "auto";
 });
 
@@ -263,3 +260,24 @@ checkoutButton.addEventListener('click', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const loginSpan = document.querySelector('.myAccount');
+
+  loginSpan.addEventListener('click', () => {
+    window.location.href = 'login/login.html';
+  });
+  
+  const loggedIn = localStorage.getItem('loggedIn') === 'true';
+  if (loggedIn) {
+    loginSpan.textContent = 'Logout';
+  } else {
+    loginSpan.textContent = 'Login/Signup';
+  }
+
+  loginSpan.addEventListener('click', () => {
+    if (loggedIn) {
+      localStorage.removeItem('loggedIn');
+      window.location.reload();
+    }
+  });
+});

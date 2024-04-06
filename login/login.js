@@ -32,7 +32,7 @@ if (password.length < 8) {
               document.getElementById("errorAlert").textContent = "Login successful";
               errorAlert.style.display = "block";
               errorAlert.classList.remove("error"); 
-              errorAlert.classList.add("success"); 
+              errorAlert.classList.add("success");
       
               setTimeout(() => {
                 window.location.href = "/index.html";
